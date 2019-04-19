@@ -225,10 +225,10 @@ a.article:hover {
 }
 
 pre {
-    background: transparent;
-    color: #575757;
+    background:#2b2c2f;
+    color: #deba85;
     border: none;
-    padding: 0
+    padding: 0;
 }
 
 table th,
@@ -265,6 +265,41 @@ table td {
 }
 
 @media (max-width: 768px) and (max-width:992px) {}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
     
     </style>
 </head>
@@ -317,6 +352,46 @@ table td {
                         <div class="line col-md-12"></div>
                     </div>
                     <div class="col-sm-6  right_sec">
+                        <div class="tab">
+                            <button class="tablinks" id ="php" onclick="webhookUserEnd(event, 'PHP')">PHP</button>
+                            <button class="tablinks" id="curl" onclick="webhookUserEnd(event, 'CURL')">CURL</button>
+                            
+                          </div>
+                          
+                          <div id="PHP" class="tabcontent">
+                            
+<pre>
+
+    if($json = json_decode(file_get_contents("php://input"), true)) {
+                              
+         $response = $json;
+
+    } else {
+                           
+         $response = $_POST;
+    }
+ </pre>
+                          </div>
+                          
+                          <div id="CURL" class="tabcontent">
+<pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</pre>                            
+                               
+                          </div>
                         
                      
                         <div class="line col-md-12"></div>
@@ -390,6 +465,7 @@ table td {
                         <h3>Response :</h3>
                         <p>
  <pre>
+
   {
     'event':'call.new'
     'call_id':'142'
@@ -444,6 +520,7 @@ table td {
 </pre>                                
                             </p>
                      <div class="line col-md-12"></div>
+
     
                         </div>
                 </div>
@@ -609,6 +686,72 @@ table td {
             });
         });
     </script>
+    <script>
+        function webhookUserEnd(evt, type) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(type).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+
+        document.getElementById("php").click();
+        </script>
+
+        <script>
+          // Cache selectors
+            var lastId,
+                topMenu = $("#pageSubmenu"),
+                topMenuHeight = topMenu.outerHeight()+15,
+                // All list items
+                menuItems = topMenu.find("a"),
+                // Anchors corresponding to menu items
+                scrollItems = menuItems.map(function(){
+                var item = $($(this).attr("href"));
+                if (item.length) { return item; }
+                });
+
+            // Bind click handler to menu items
+            // so we can get a fancy scroll animation
+            menuItems.click(function(e){
+            var href = $(this).attr("href"),
+                offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+            $('html, body').stop().animate({ 
+                scrollTop: offsetTop
+            }, 300);
+            e.preventDefault();
+            });
+
+            // Bind to scroll
+            $(window).scroll(function(){
+            // Get container scroll position
+            var fromTop = $(this).scrollTop()+topMenuHeight;
+            
+            // Get id of current scroll item
+            var cur = scrollItems.map(function(){
+                if ($(this).offset().top < fromTop)
+                return this;
+            });
+            // Get the id of the current element
+            cur = cur[cur.length-1];
+            var id = cur && cur.length ? cur[0].id : "";
+            
+            if (lastId !== id) {
+                lastId = id;
+                // Set/remove active class
+                menuItems
+                    .parent().removeClass("active")
+                    .end().filter("[href='#"+id+"']").parent().addClass("active");
+            }                   
+            });
+        </script>
+    
 </body>
 
 </html>
