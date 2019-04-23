@@ -601,7 +601,7 @@ table td {
                 <div class="row" id="new_call">
                     <div class="col-sm-6  left_sec">
                         <h1>call.new</h1>
-                        <div class="col-md-12 bg-info">
+                        <div class="col-md-12 ">
                             <!-- <h4>Usage 1</h4> -->
                             <p>This event is fired when customer requested to call.
                             </p>
@@ -610,7 +610,7 @@ table td {
                         <div class="line col-md-12"></div>
                     </div>
                     <div class="col-sm-6  right_sec">
-                        <h3>Response</h3>
+                        <h3>Response:</h3>
 
     <pre>
 
@@ -639,7 +639,7 @@ table td {
                 <div class="row" id="call_schedule">
                     <div class="col-sm-6  left_sec">
                         <h1>call.scheduled</h1>
-                        <div class="col-md-12 bg-success">
+                        <div class="col-md-12 ">
                             <!-- <h4>Usage 1</h4> -->
                             <p>This event is fired when a call scheduled by customer.
                             </p>
@@ -648,23 +648,23 @@ table td {
                         <div class="line col-md-12"></div>
                     </div>
                     <div class="col-sm-6  right_sec">
-                        <h3>Response</h3>
+                        <h3>Response:</h3>
 
     <pre>
 
     { 
-        <b class="text-warning">"event":</b> "",
-        <b class="text-warning">"call_id":</b> "",
-        <b class="text-warning">"widget_id":</b> "",
-        <b class="text-warning">"lead_phone":</b> "",
-        <b class="text-warning">"visitor_city":</b> "",
-        <b class="text-warning">"visitor_timezone":</b> "",
-        <b class="text-warning">"visitor_url":</b> "",
-        <b class="text-warning">"referral_url":</b> "",
-        <b class="text-warning">"department":</b> "",
-        <b class="text-warning">"dynamic_number":</b> "",
-        <b class="text-warning">"gaclientid":</b> "",
-        <b class="text-warning">"created":</b> "",
+        <b>"event":</b> "",
+        <b>"call_id":</b> "",
+        <b>"widget_id":</b> "",
+        <b>"lead_phone":</b> "",
+        <b>"visitor_city":</b> "",
+        <b>"visitor_timezone":</b> "",
+        <b>"visitor_url":</b> "",
+        <b>"referral_url":</b> "",
+        <b>"department":</b> "",
+        <b>"dynamic_number":</b> "",
+        <b>"gaclientid":</b> "",
+        <b>"created":</b> "",
     }         
 
     </pre>
@@ -677,7 +677,7 @@ table td {
                 <div class="row" id="call_missed">
                         <div class="col-sm-6  left_sec">
                             <h1>call.missed</h1>
-                            <div class="col-md-12 bg-success">
+                            <div class="col-md-12 ">
                                 <!-- <h4>Usage 1</h4> -->
                                 <p>This event is fired when a call missed by agents.
                                 </p>
@@ -686,18 +686,18 @@ table td {
                             <div class="line col-md-12"></div>
                         </div>
                         <div class="col-sm-6  right_sec">
-                            <h3>Response</h3>
+                            <h3>Response:</h3>
     
 <pre>
 
     { 
-        <b class="text-warning">"event":</b> "call.missed",
-        <b class="text-warning">"call_id":</b> "141",
-        <b class="text-warning">"widget_id":</b> "5000",
-        <b class="text-warning">"lead_phone":</b> "+919876543210",
-        <b class="text-warning">"callstatus":</b> "Missed by customer - agent hangup",
-        <b class="text-warning">"retry_attempts":</b> "0",
-        <b class="text-warning">"created":</b> "2019-04-12T20:07:46.000Z"                 
+        <b>"event":</b> "call.missed",
+        <b>"call_id":</b> "141",
+        <b>"widget_id":</b> "5000",
+        <b>"lead_phone":</b> "+919876543210",
+        <b>"callstatus":</b> "Missed by customer - agent hangup",
+        <b>"retry_attempts":</b> "0",
+        <b>"created":</b> "2019-04-12T20:07:46.000Z"                 
     }     
 
 </pre>
@@ -710,7 +710,7 @@ table td {
                     <div class="row" id="claim_call">
                             <div class="col-sm-6  left_sec">
                                 <h1>call.claimed</h1>
-                                <div class="col-md-12 bg-info">
+                                <div class="col-md-12 ">
                                     <!-- <h4>Usage 1</h4> -->
                                     <p>This event is fired when a call claimed by agent.
                                     </p>
@@ -719,7 +719,7 @@ table td {
                                 <div class="line col-md-12"></div>
                             </div>
                             <div class="col-sm-6  right_sec">
-                                <h3>Response</h3>
+                                <h3>Response:</h3>
         
 <pre>
 
@@ -747,7 +747,7 @@ table td {
                         <div class="row" id="connect_call">
                                 <div class="col-sm-6  left_sec">
                                     <h1>call.connected</h1>
-                                    <div class="col-md-12 bg-info">
+                                    <div class="col-md-12 ">
                                         <!-- <h4>Usage 1</h4> -->
                                         <p>This event is fired when a call connected to customer.
                                         </p>
@@ -756,7 +756,7 @@ table td {
                                     <div class="line col-md-12"></div>
                                 </div>
                                 <div class="col-sm-6  right_sec">
-                                    <h3>Response</h3>
+                                    <h3>Response:</h3>
             
 <pre>
 
@@ -782,7 +782,7 @@ table td {
                             <div class="row" id="connect_call">
                                     <div class="col-sm-6  left_sec">
                                         <h1>call.finished</h1>
-                                        <div class="col-md-12 bg-info">
+                                        <div class="col-md-12 ">
                                             <!-- <h4>Usage 1</h4> -->
                                             <p>This event is fired when a call was completely finished.
                                             </p>
@@ -791,7 +791,7 @@ table td {
                                         <div class="line col-md-12"></div>
                                     </div>
                                     <div class="col-sm-6  right_sec">
-                                        <h3>Response</h3>
+                                        <h3>Response:</h3>
                 
 <pre>
 
