@@ -14,7 +14,6 @@ body {
     font-family: 'Poppins', sans-serif;
     background: #fff;
 }
-
 p {
     font-family: 'Poppins', sans-serif;
     /* font-size: 1.1em; */
@@ -22,7 +21,6 @@ p {
     line-height: 1.7em;
     color: #575757;
 }
-
 h1,
 h2,
 h4,
@@ -30,11 +28,9 @@ h5,
 h6 {
     color: #373737
 }
-
 h4 {
     font-size: 16px;
 }
-
 a,
 a:hover,
 a:focus {
@@ -42,7 +38,6 @@ a:focus {
     text-decoration: none;
     transition: all 0.3s;
 }
-
 .navbar {
     padding: 15px 10px;
     background: #fff;
@@ -51,30 +46,24 @@ a:focus {
     margin-bottom: 40px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
-
 .navbar-btn {
     box-shadow: none;
     outline: none !important;
     border: none;
 }
-
 .line {
     width: 100%;
     height: 1px;
     border-bottom: 1px dashed #ddd;
     margin: 40px 0;
 }
-
-
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
-
 .wrapper {
     display: flex;
     align-items: stretch;
 }
-
 #sidebar {
     min-width: 250px;
     max-width: 250px;
@@ -82,51 +71,41 @@ a:focus {
     color: #fff;
     transition: all 0.3s;
 }
-
 #sidebar.active {
     margin-left: -250px;
 }
-
 #sidebar .sidebar-header {
     padding: 20px;
     background: #2b2c2f;
 }
-
 .sidebar-header h3 {
     color: #fff
 }
-
 #sidebar ul.components {
     padding: 20px 0;
     border-bottom: 1px solid #ddd;
 }
-
 #sidebar ul p {
     color: #fff;
     padding: 10px;
 }
-
 #sidebar ul li a {
     padding: 10px;
     font-size: 1.1em;
     display: block;
 }
-
 #sidebar ul li a:hover {
     color: #fff;
     background: #2b2c2f;
 }
-
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
     color: #fff;
     background: #2b2c2f !important;
 }
-
 a[data-toggle="collapse"] {
     position: relative;
 }
-
 a[aria-expanded="false"]::before,
 a[aria-expanded="true"]::before {
     content: '\e259';
@@ -136,21 +115,17 @@ a[aria-expanded="true"]::before {
     font-family: 'Glyphicons Halflings';
     font-size: 0.6em;
 }
-
 a[aria-expanded="true"]::before {
     content: '\e260';
 }
-
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
     /* background: #6d7fcc; */
 }
-
 ul.CTAs {
     padding: 20px;
 }
-
 ul.CTAs a {
     text-align: center;
     font-size: 0.9em !important;
@@ -158,20 +133,17 @@ ul.CTAs a {
     border-radius: 5px;
     margin-bottom: 5px;
 }
-
 .search_side {
     width: 90%;
     margin: 10px auto 0;
     position: relative;
 }
-
 .search_side .fa {
     position: absolute;
     left: 5px;
     top: 10px;
     color: #fff;
 }
-
 .search_side .form-control {
     border-bottom: 1px solid #ddd !important;
     border: none;
@@ -181,8 +153,6 @@ ul.CTAs a {
     color: #fff;
     padding-left: 25px;
 }
-
-
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
@@ -197,28 +167,23 @@ pre {
     min-height: 100vh;
     transition: all 0.3s;
 }
-
 .bg_grey {
     background: #f1f1f1;
 }
-
 .left_sec .bg_grey {
     background: #f1f1f1;
     padding: 15px;
     margin-bottom: 20px;
 }
-
 .left_sec {
     background: #fff;
     padding: 20px;
     border-top: 1px dashed #c2cdd3
 }
-
 .right_sec {
     background: #e5ebee;
     padding: 40px 29px;
 }
-
 .left_sec h1 {
     padding: 15px;
     background: #f1f1f1;
@@ -226,11 +191,9 @@ pre {
     font-size: 21px;
     /* border-bottom: 1px solid #ddd; */
 }
-
 .right_sec p {
     margin: 10px 0
 }
-
 .right_sec h3 {
     padding: 10px 15px;
     background: #c2cdd3;
@@ -240,56 +203,45 @@ pre {
     border-top: 1px solid #9fa5a8;
     border-bottom: 1px solid #919597;
 }
-
 pre {
     background: transparent;
     color: #575757;
     border: none;
     padding: 0
 }
-
 table th,
 table td {
     font-size: 12px;
   
 }
-
 .fixed-top {
     position: fixed;
     top: 0;
     z-index: 99;
 }
-
 .fixed-top .nav {
     background: #2b2c2f;
     color: #fff;
 }
-
 .fixed-top .nav li a {
     padding: 1px 15px;
     border-left: 1px solid #fff;
     font-size: 12px;
 }
-
 .fixed-top .nav li a:hover {
     background: #2b2c2f;
     color: #fff;
 }
-
 .in li.active a {
     background: #5f6064 !important;
 }
-
-
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
-
 .side_bar {
     position: fixed;
     height: 100%;
 }
-
 @media (min-width: 768px) {
     .no-padding {
         padding: 0
@@ -298,7 +250,6 @@ table td {
         padding: 0
     }
 }
-
 @media (max-width: 768px) {
     #sidebar {
         margin-left: -250px;
@@ -350,7 +301,6 @@ table td {
         transition: .5s all;
     }
 }
-
 @media (min-width: 768px) and (max-width:992px) {
     #sidebar {
         min-width: 180px;
@@ -358,7 +308,6 @@ table td {
         margin-left: 0;
     }
 }
-
 @media (min-width: 1024px) and (max-width:1520px) {
     #sidebar {
         min-width: 200px;
@@ -366,7 +315,6 @@ table td {
         margin-left: 0;
     }
 }
-
 /* Style the tab */
 .tab {
     overflow: hidden;
@@ -467,7 +415,7 @@ table td {
                         <h1>Webhooks</h1>
                         <div class="col-md-12 ">
                             <h4>Overview</h4>
-                            <p>When one of these events fired , we'll send you json in your webhook url that you have provided.    </p>
+                            <p>When one of these events is fired, we'll send you the json in your webhook url that you have provided.    </p>
                         </div>
 
                         <div class="line col-md-12"></div>
@@ -526,7 +474,7 @@ table td {
                 <div class="row" id="event">
                     <div class="col-sm-6  left_sec">
                         <h1>Events</h1>
-                        <div class="col-md-12 ">In webhook panel you can select which events you would like to receive.
+                        <div class="col-md-12 ">In the Webhook panel you can select which events you would like to receive.
                             <table class="table table-striped">
                                 <thead>
                                     <tr>
@@ -537,27 +485,27 @@ table td {
                                 <tbody>
                                     <tr style="background-color:#f9f9f9;">
                                         <td>call.new</td>
-                                        <td>When new call genrated.</td>
+                                        <td>New call is generated.</td>
                                     </tr>
                                     <tr>
                                         <td>call.scheduled</td>
-                                        <td>When customer scheduled the call.</td>
+                                        <td>Customer has scheduled a call.</td>
                                     </tr>
                                     <tr style="background-color:#f9f9f9;">
                                         <td>call.missed</td>
-                                        <td>When there is no available agents.</td>
+                                        <td>There are no available agents.</td>
                                     </tr>
                                     <tr>
                                         <td>call.claimed</td>
-                                        <td>When call is claimed by agent.</td>
+                                        <td>Call is claimed by an agent.</td>
                                     </tr>
                                     <tr style="background-color:#f9f9f9;">
                                         <td>call.connected</td>
-                                        <td>When call is connected to the customer.</td>
+                                        <td>Call is connected to the customer.</td>
                                     </tr>
                                     <tr>
                                         <td>call.finished</td>
-                                        <td>When call is successfully completed.</td>
+                                        <td>Call is successfully completed.</td>
                                     </tr>
                                     <!-- <tr class="warning">
                                         <td>This is td</td>
@@ -573,7 +521,6 @@ table td {
                         <h3>Usage</h3>
                         <p>ngrok http 80 dummy</p>
                         <h3>Usage</h3>
-
                         <pre>
         { 
             "data" : {
@@ -592,10 +539,7 @@ table td {
             }    
                 }                                                
                  </pre>
-
-
                         <div class="line col-md-12"></div>
-
                     </div> -->
                 </div>
                 <div class="row" id="new_call">
@@ -603,7 +547,7 @@ table td {
                         <h1>call.new</h1>
                         <div class="col-md-12 ">
                             <!-- <h4>Usage 1</h4> -->
-                            <p>This event is fired when customer requested to call.
+                            <p>This event is fired when a customer has requested a call.
                             </p>
                         </div>
 
@@ -641,7 +585,7 @@ table td {
                         <h1>call.scheduled</h1>
                         <div class="col-md-12 ">
                             <!-- <h4>Usage 1</h4> -->
-                            <p>This event is fired when a call scheduled by customer.
+                            <p>This event is fired when a call is scheduled by a customer.
                             </p>
                         </div>
 
@@ -679,7 +623,7 @@ table td {
                             <h1>call.missed</h1>
                             <div class="col-md-12 ">
                                 <!-- <h4>Usage 1</h4> -->
-                                <p>This event is fired when a call missed by agents.
+                                <p>This event is fired when a call is missed by the agents.
                                 </p>
                             </div>
     
@@ -712,7 +656,7 @@ table td {
                                 <h1>call.claimed</h1>
                                 <div class="col-md-12 ">
                                     <!-- <h4>Usage 1</h4> -->
-                                    <p>This event is fired when a call claimed by agent.
+                                    <p>This event is fired when a call is claimed by an agent.
                                     </p>
                                 </div>
         
@@ -749,7 +693,7 @@ table td {
                                     <h1>call.connected</h1>
                                     <div class="col-md-12 ">
                                         <!-- <h4>Usage 1</h4> -->
-                                        <p>This event is fired when a call connected to customer.
+                                        <p>This event is fired when an agent is connected to the customer.
                                         </p>
                                     </div>
             
@@ -784,7 +728,7 @@ table td {
                                         <h1>call.finished</h1>
                                         <div class="col-md-12 ">
                                             <!-- <h4>Usage 1</h4> -->
-                                            <p>This event is fired when a call was completely finished.
+                                            <p>This event is fired when a call is ended.
                                             </p>
                                         </div>
                 
@@ -841,7 +785,6 @@ table td {
             $('.components li').click(function(e) {
                 $(this).addClass('active').siblings().removeClass('active');
             });
-
         });
     </script>
     <!-- <script>
@@ -872,7 +815,6 @@ table td {
           document.getElementById(type).style.display = "block";
           evt.currentTarget.className += " active";
         }
-
         document.getElementById("php").click();
         </script>
 
@@ -888,7 +830,6 @@ table td {
                 var item = $($(this).attr("href"));
                 if (item.length) { return item; }
                 });
-
             // Bind click handler to menu items
             // so we can get a fancy scroll animation
             menuItems.click(function(e){
@@ -899,7 +840,6 @@ table td {
             }, 300);
             e.preventDefault();
             });
-
             // Bind to scroll
             $(window).scroll(function(){
             // Get container scroll position
